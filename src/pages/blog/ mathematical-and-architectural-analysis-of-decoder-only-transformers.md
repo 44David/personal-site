@@ -23,7 +23,7 @@ You can find my source code for the model [here](https://www.github.com/44David/
 
 OpenLM is built using a decoder-only transformer architecture, very similar to the architecture of GPT-2, 
 
-<img src="/public/images/gpt-2-model-arch.png" alt="Diagram" width="500" />
+<img src="/images/gpt-2-model-arch.png" alt="Diagram" width="500" />
 
 
 In the case of OpenLM, a layer size of 8 was used with the model dimension ($d_{model}$) being 512 .
