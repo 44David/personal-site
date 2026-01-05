@@ -3,13 +3,6 @@ layout: ../../layouts/Markdown.astro
 title: Mathematical and Architectural Analysis of Decoder-Only Transformers
 ---
 
-<header>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/projects/">Projects</a>
-        <a href="/blog/">Blog</a>
-    </nav>
-</header>
 
 # Mathematical and Architectural Analysis of Decoder-Only Transformers
 ##### 2025-09-02 

@@ -3,14 +3,6 @@ layout: ../../layouts/Markdown.astro
 title:  LLM Validated Delusions; You're Absolutely Right!
 ---
 
-<header>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/projects/">Projects</a>
-        <a href="/blog/">Blog</a>
-    </nav>
-</header>
-
 
 # LLM Validated Delusions; You're Absolutely Right!
 ##### 2025-09-11 

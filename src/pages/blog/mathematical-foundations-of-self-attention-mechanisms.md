@@ -2,13 +2,7 @@
 layout: ../../layouts/Markdown.astro
 title: Mathematical Foundations of Self-Attention Mechanisms
 ---
-<header>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/projects/">Projects</a>
-        <a href="/blog/">Blog</a>
-    </nav>
-</header>
+
 
 # Mathematical Foundations of Self-Attention Mechanisms
 ##### 2025-08-15 
