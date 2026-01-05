@@ -1,0 +1,35 @@
+---
+const allPosts = import.meta.glob('../../pages/blog/*.md', { eager: true });
+
+const posts = Object.entries(allPosts).map(([path, mod]) => {
+  const slug = path.replace('../../pages/blog/', '').replace('.md', '');
+  return {
+    url: `/blog/${slug}/`,
+    title: (mod as any).frontmatter.title,
+  };
+});
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+          <a href="/">Home</a>
+          <a href="/projects/">Projects</a>
+          <a href="/blog/">Blog</a>
+      </nav>
+    </header>
+    <h1>Entries</h1>
+    <hr>
+      {posts.map(post => (
+        <h3>
+          <a href={post.url}>{post.title}</a>
+        </h3>
+      ))}
+
+  </body>
+</html>
