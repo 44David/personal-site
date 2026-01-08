@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/Markdown.astro
 title:  LLM Validated Delusions; You're Absolutely Right!
+date: 2025-09-11
 ---
 
 

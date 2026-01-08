@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/Markdown.astro
 title: Mathematical and Architectural Analysis of Decoder-Only Transformers
+date: 2025-09-02
 ---
 
 

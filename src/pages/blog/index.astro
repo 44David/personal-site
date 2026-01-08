@@ -1,13 +1,27 @@
 ---
 const allPosts = import.meta.glob('../../pages/blog/*.md', { eager: true });
 
-const posts = Object.entries(allPosts).map(([path, mod]) => {
-  const slug = path.replace('../../pages/blog/', '').replace('.md', '');
-  return {
-    url: `/blog/${slug}/`,
-    title: (mod as any).frontmatter.title,
-  };
-});
+const posts = Object.entries(allPosts)
+  .map(([path, mod]) => {
+    const slug = path.replace('../../pages/blog/', '').replace('.md', '');
+    return {
+      url: `/blog/${slug}/`,
+      title: (mod as any).frontmatter.title,
+      date: (mod as any).frontmatter.date,
+    };
+  })
+  .sort((a, b) => {
+    const dateA = typeof a.date === 'string' ? a.date : a.date.toISOString();
+    const dateB = typeof b.date === 'string' ? b.date : b.date.toISOString();
+    return dateB.localeCompare(dateA);
+  });
+
+const formatDate = (date: any) => {
+  const dateString = typeof date === 'string' ? date : date.toISOString();
+  const [year, month, day] = dateString.split('T')[0].split('-');
+  const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  return `${day} ${monthNames[Number(month) - 1]}, ${year}`;
+};
 ---
 
 <html lang="en">
@@ -17,19 +31,20 @@ const posts = Object.entries(allPosts).map(([path, mod]) => {
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navbar">
           <a href="/">Home</a>
           <a href="/projects/">Projects</a>
           <a href="/blog/">Blog</a>
       </nav>
     </header>
     <h1>Entries</h1>
-    <hr>
+    <div class="posts">
       {posts.map(post => (
-        <h3>
+        <div class="post-item">
+          <span class="date">{formatDate(post.date)}</span>
           <a href={post.url}>{post.title}</a>
-        </h3>
+        </div>
       ))}
-
+    </div>
   </body>
 </html>

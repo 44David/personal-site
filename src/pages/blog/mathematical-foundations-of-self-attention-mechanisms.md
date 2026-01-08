@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/Markdown.astro
 title: Mathematical Foundations of Self-Attention Mechanisms
+date: 2025-08-15
 ---
 
 

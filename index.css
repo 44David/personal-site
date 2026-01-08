@@ -8,13 +8,21 @@ body {
     line-height: 1.5;
 }
 
+
+
 a {
     cursor: pointer;
     text-decoration: underline;
 }
 
+
+
 a:hover {
     text-decoration: underline;
+}
+
+.navbar a {
+    text-decoration: none;
 }
 
 main {
@@ -39,3 +47,25 @@ header nav {
     gap: 15px; 
     flex-wrap: wrap;
 }
+
+
+.posts {
+  margin-top: 1rem;
+}
+
+.post-item {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  flex-shrink: 0;
+  width: 120px;
+  color: #999;
+}
+
+.posts a {
+    text-decoration: none;
+}
+
