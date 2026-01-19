@@ -25,13 +25,13 @@ And so every point in this landscape represents the loss attained when using tho
 Our goal is to find local minima, points where the loss is close to the lowest.
 #### Why not the global minimum?
 
-<img src="/images/local-minima.png" alt="Loss Landscape" width="500" />
+<img src="/images/local-minima.png" alt="Local Minima" width="500" />
 
 This image from the deep learning book describes it quite well, even though a global minimum does indeed exist, there is little point to optimizing further than a local minima that is "good enough" for the job. 
 
 # Convex and Non-Convex Functions
 
-<img src="/images/convex-nonconvex.png" alt="Loss Landscape" width="700" />
+<img src="/images/convex-nonconvex.png" alt="Convex & Non-convex" width="700" />
 
 ### Non-Convexity 
 Earlier, when we talked about loss landscapes and our function $f$, I provided an image of a loss landscape, with all of its bumps, hills, saddle points and rough terrain, what I have explained is the most common function in deep learning, which is a non-convex function.

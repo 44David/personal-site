@@ -39,6 +39,19 @@ main {
         margin-top: 30px;
         margin-bottom: 10px;
     }
+    
+.post-item {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: baseline;
+}
+    
+.date {
+    width: auto;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+    min-width: 80px;
+}
 }
 
 
@@ -72,6 +85,15 @@ header nav {
 pre {
   white-space: pre-wrap;
   word-wrap: break-word;
-  overflow-x: auto; /* fallback for very long words */
-  padding: 10px;
+  overflow-x: auto;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f5f5f5 !important;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #333 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
