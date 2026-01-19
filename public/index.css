@@ -40,6 +40,14 @@ main {
         margin-bottom: 10px;
     }
     
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+        width: 100% !important;
+        margin: 10px 0;
+        display: block;
+    }
+    
 .post-item {
     flex-direction: row;
     gap: 1rem;
@@ -80,6 +88,13 @@ header nav {
 
 .posts a {
     text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
 }
 
 pre {
